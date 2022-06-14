@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    background-image: url(pictures/shoppingcart.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins';
+    font-size: 20px;
+  }
+  </style>
+  <title>HealthyEats</title>
+</head>
+<body>
+  
+  <div class="title">
+    <h1>Discover food nutrients based on your dietary needs.</h1>
+    <blockquote>“The doctor of the future will no longer treat the human frame with drugs, but rather will cure and prevent disease with nutrition.” <br>
+      <cite>
+      ~ Thomas A. Edison
+      </cite>
+    </blockquote>
+  </div>
+
+  <div class="select-food">
+    <input type="text" class="search-control" placeholder="Enter your item!" id="search-input">
+ 
+    <button type="submit" class="search-button btn" id="search-button">
+      <i class="fas fa-search">  Calculate!</i>
+    </button>
+    
+  </div>
+  
+
+  
+  <div class="container">
+      <div class="drop-bar" >
+        <select id="dropbar1">
+          <option value="default">Choose your Option!</option>
+          <option value="11">Heart Healthy (Cholesterol)</option>
+          <option value="4">Diabetes Friendly</option>
+          <option value="10">Protein</option>
+      </select>
+      </div>
+    </div>
+
+    <div id="results">
+
+    </div>
+
+  
+  
+  <script src="get.js"></script>
+</body>
+</html>
